@@ -142,6 +142,39 @@
         </div>
       </div>
 
+      <section id="my-keyboards">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>My-keyboards</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name">vantage union</h4>
+                <img src="img/keyboards/1.png" alt="vantage union" class="keyboard-img" />
+                <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name">job union</h4>
+                <img src="img/keyboards/2.png" alt="vantage union" class="keyboard-img" />
+                <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name">break pc</h4>
+                <img src="img/keyboards/3.png" alt="vantage union" class="keyboard-img" />
+                <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffff"
@@ -329,6 +362,15 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+        max: 25,
+        speed: 2500,
+        glare: true,
       });
     </script>
   </body>
